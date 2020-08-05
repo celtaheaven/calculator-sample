@@ -104,31 +104,36 @@ class CalculatorViewController: UIViewController, ViewCode {
     }
 
     func setupConstraints() {
-        num1TextField.translatesAutoresizingMaskIntoConstraints = false
-        num1TextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16).isActive = true
-        num1TextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
-        num1TextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
+        view.addSubview(num1TextField, [
+            num1TextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            num1TextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            num1TextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+        ])
 
-        num2TextField.translatesAutoresizingMaskIntoConstraints = false
-        num2TextField.topAnchor.constraint(equalTo: num1TextField.bottomAnchor, constant: 16).isActive = true
-        num2TextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
-        num2TextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
+        view.addSubview(num2TextField, [
+            num2TextField.topAnchor.constraint(equalTo: num1TextField.bottomAnchor, constant: 16),
+            num2TextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            num2TextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+        ])
 
-        operationSymbolTextField.translatesAutoresizingMaskIntoConstraints = false
-        operationSymbolTextField.topAnchor.constraint(equalTo: num2TextField.bottomAnchor, constant: 16).isActive = true
-        operationSymbolTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
-        operationSymbolTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
+        view.addSubview(operationSymbolTextField, [
+            operationSymbolTextField.topAnchor.constraint(equalTo: num2TextField.bottomAnchor, constant: 16),
+            operationSymbolTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            operationSymbolTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+        ])
 
-        operateButton.translatesAutoresizingMaskIntoConstraints = false
-        operateButton.topAnchor.constraint(equalTo: operationSymbolTextField.bottomAnchor, constant: 16).isActive = true
-        operateButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
-        operateButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
-        operateButton.heightAnchor.constraint(equalToConstant: 32).isActive = true
+        view.addSubview(operateButton, [
+            operateButton.topAnchor.constraint(equalTo: operationSymbolTextField.bottomAnchor, constant: 16),
+            operateButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            operateButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            operateButton.heightAnchor.constraint(equalToConstant: 32)
+        ])
 
-        resultLabel.translatesAutoresizingMaskIntoConstraints = false
-        resultLabel.topAnchor.constraint(equalTo: operateButton.bottomAnchor, constant: 16).isActive = true
-        resultLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
-        resultLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
+        view.addSubview(resultLabel, [
+            resultLabel.topAnchor.constraint(equalTo: operateButton.bottomAnchor, constant: 16),
+            resultLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            resultLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+        ])
     }
 
     func setupAdditionalConfiguration() {
