@@ -14,6 +14,7 @@
 		2FCB254E24DAFA4800F96593 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2796824DADE8D00093523 /* ViewCode.swift */; };
 		2FCB254F24DAFA4D00F96593 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9635302472FB8E00E9FFC8 /* Calculator.swift */; };
 		2FCB255024DAFA4D00F96593 /* CalculatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F365C9D24782BB300B13278 /* CalculatorError.swift */; };
+		2FCB255224DAFF0700F96593 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB255124DAFF0700F96593 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		2FCB254424DAF8C600F96593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FCB254724DAF8C600F96593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FCB254924DAF8C600F96593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FCB255124DAFF0700F96593 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		2FE2796824DADE8D00093523 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				2FE2796824DADE8D00093523 /* ViewCode.swift */,
+				2FCB255124DAFF0700F96593 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				2FCB254F24DAFA4D00F96593 /* Calculator.swift in Sources */,
 				2FCB253C24DAF8C300F96593 /* AppDelegate.swift in Sources */,
 				2FCB254E24DAFA4800F96593 /* ViewCode.swift in Sources */,
+				2FCB255224DAFF0700F96593 /* UIView.swift in Sources */,
 				2FCB255024DAFA4D00F96593 /* CalculatorError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
