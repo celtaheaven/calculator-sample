@@ -6,16 +6,16 @@
 //  Copyright © 2020 Guilherme Guimaraes. All rights reserved.
 //
 
-class Calculator {
-    var num1: Double?
-    var num2: Double?
-    var operationSymbol: String?
+public class Calculator {
+    public var num1: Double?
+    public var num2: Double?
+    public var operationSymbol: String?
 
-    init() { }
+    public init() { }
 
     // MARK: Functions
 
-    func operate() throws -> Double {
+    public func operate() throws -> Double {
         guard let num1 = num1 else {
             throw CalculatorError.num1IsNil
         }

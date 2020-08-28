@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum CalculatorError: LocalizedError {
+public enum CalculatorError: LocalizedError {
     case num1IsNil
     case num2IsNil
     case operationSymbolIsNil
@@ -16,7 +16,7 @@ enum CalculatorError: LocalizedError {
 
     // MARK: LocalizedError conforms
 
-    var errorDescription: String? {
+    public var errorDescription: String? {
         switch self {
         case .num1IsNil:
             return "First number is nil"
