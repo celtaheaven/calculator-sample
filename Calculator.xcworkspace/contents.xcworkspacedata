@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CalculatorCore/CalculatorCore.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:calculator-sample.xcodeproj">
    </FileRef>
 </Workspace>
