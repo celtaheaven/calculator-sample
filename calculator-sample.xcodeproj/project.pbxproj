@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FA3906A24F95503005EC02B /* CalculatorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA3906924F95503005EC02B /* CalculatorCore.framework */; };
+		2FA3906B24F95503005EC02B /* CalculatorCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA3906924F95503005EC02B /* CalculatorCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FCB253C24DAF8C300F96593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB253B24DAF8C300F96593 /* AppDelegate.swift */; };
 		2FCB254524DAF8C600F96593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FCB254424DAF8C600F96593 /* Assets.xcassets */; };
 		2FCB254824DAF8C600F96593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FCB254624DAF8C600F96593 /* LaunchScreen.storyboard */; };
@@ -25,8 +27,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2FA3906C24F95503005EC02B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2FA3906B24F95503005EC02B /* CalculatorCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2F9635122472FB3200E9FFC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2FA3906924F95503005EC02B /* CalculatorCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CalculatorCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCB253924DAF8C300F96593 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCB253B24DAF8C300F96593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FCB254424DAF8C600F96593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA3906A24F95503005EC02B /* CalculatorCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +81,7 @@
 				2FCB255824DB0ECE00F96593 /* CalculatorTests */,
 				2F96350C2472FB3200E9FFC8 /* Products */,
 				FB804C100B9E1C253A85226B /* Pods */,
+				2FA3906824F95503005EC02B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +92,14 @@
 				2FCB255724DB0ECE00F96593 /* CalculatorTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2FA3906824F95503005EC02B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FA3906924F95503005EC02B /* CalculatorCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2FCB253A24DAF8C300F96593 /* Calculator */ = {
@@ -122,6 +149,7 @@
 				2FCB253524DAF8C300F96593 /* Sources */,
 				2FCB253624DAF8C300F96593 /* Frameworks */,
 				2FCB253724DAF8C300F96593 /* Resources */,
+				2FA3906C24F95503005EC02B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
