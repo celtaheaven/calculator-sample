@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2FA3904724F95333005EC02B"
+               BuildableName = "CalculatorCore.framework"
+               BlueprintName = "CalculatorCore"
+               ReferencedContainer = "container:CalculatorCore/CalculatorCore.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "2FCB253824DAF8C300F96593"
                BuildableName = "Calculator.app"
                BlueprintName = "Calculator"
