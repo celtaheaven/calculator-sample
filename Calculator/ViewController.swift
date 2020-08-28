@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CalculatorCore
 
 enum ViewControllerInputError: LocalizedError {
     case num1TextFieldInvalid
